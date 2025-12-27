@@ -1,5 +1,8 @@
 # requirements.txt (CPU Installation)
 
+# Local wheel (install before other packages)
+./praat_parselmouth-0.4.7-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl
+
 # Web Framework
 fastapi
 uvicorn[standard]
@@ -26,6 +29,5 @@ tqdm
 hf-transfer
 pydub
 librosa
-praat-parselmouth
 torch
 torchaudio
