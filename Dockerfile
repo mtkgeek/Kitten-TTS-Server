@@ -44,7 +44,7 @@ COPY praat_parselmouth-0.4.7-312-cp312-manylinux_2_12_i686.manylinux2010_i686.wh
 
 # Upgrade pip and install the praat parser wheel before other dependencies
 RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir ./praat_parselmouth-0.4.7-cp312-cp312-manylinux_2_12_i686.manylinux2010_i686.whl
+RUN pip install --no-cache-dir ./praat_parselmouth-0.4.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
 RUN pip install --no-cache-dir -r requirements.txt
 
 # --- Conditionally Install GPU Dependencies ---
