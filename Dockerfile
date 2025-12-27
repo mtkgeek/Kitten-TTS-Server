@@ -44,7 +44,6 @@ COPY praat_parselmouth-0.5.0.dev0-cp310-cp310-manylinux2014_aarch64.manylinux_2_
 
 # Upgrade pip and install the praat parser wheel before other dependencies
 RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir ./praat_parselmouth-0.5.0.dev0-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
 RUN pip install --no-cache-dir -r requirements.txt
 
 # --- Conditionally Install GPU Dependencies ---

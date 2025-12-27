@@ -1,7 +1,7 @@
 # requirements.txt (CPU Installation)
 
 # Local wheel (install before other packages)
-./praat_parselmouth-0.4.7-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl
+./praat_parselmouth-0.5.0.dev0-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
 
 # Web Framework
 fastapi
