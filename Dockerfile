@@ -40,11 +40,11 @@ WORKDIR /app
 # Copy requirements files and the local wheel first to leverage Docker's layer caching
 COPY requirements.txt .
 COPY requirements-nvidia.txt .
-COPY praat_parselmouth-0.4.7-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl .
+COPY praat_parselmouth-0.5.0.dev0-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl .
 
 # Upgrade pip and install the praat parser wheel before other dependencies
 RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir ./praat_parselmouth-0.4.7-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.whl
+RUN pip install --no-cache-dir ./praat_parselmouth-0.5.0.dev0-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
 RUN pip install --no-cache-dir -r requirements.txt
 
 # --- Conditionally Install GPU Dependencies ---
