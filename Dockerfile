@@ -42,6 +42,7 @@ COPY requirements-nvidia.txt .
 
 # Upgrade pip and install the base Python dependencies from requirements.txt
 RUN pip install --no-cache-dir --upgrade pip
+RUN pip install --no-cache-dir praat-parselmouth==0.4.3
 RUN pip install --no-cache-dir -r requirements.txt
 
 # --- Conditionally Install GPU Dependencies ---
